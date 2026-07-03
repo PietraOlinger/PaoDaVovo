@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pão da Vovó - Padaria e Café Colonial em Bombinhas</title>
+    <meta name="description" content="Pão da Vovó: Tradição e sabor desde 1989. Café da manhã, almoço caseiro e café colonial em Bombinhas. Pão quentinho, frutos do mar e comida típica.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Pão da Vovó" class="logo-img">
+                <span class="logo-text">Pão da Vovó</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                <li><a href="#horario" class="nav-link">Horários</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Pão da Vovó</h1>
+            <p class="subtitle">Tradição e Sabor desde 1989</p>
+            <p class="description">Café quentinho, pão fresco e almoço caseiro pertinho da praia</p>
+            <button class="btn btn-primary" onclick="document.querySelector('#cardapio').scrollIntoView({behavior: 'smooth'})">
+                Ver Cardápio
+            </button>
+            <a href="https://wa.me/5547992528600?text=Olá! Gostaria de fazer um pedido no Pão da Vovó" 
+               class="btn btn-primary" target="_blank" style="margin-left: 10px;">
+                <i class="fab fa-whatsapp"></i> Encomendar
+            </a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Bem-vindo ao Pão da Vovó</h2>
+                    <p>Desde 1989, o Pão da Vovó é sinônimo de qualidade e tradição em Bombinhas. Localizado na Avenida Principal, pertinho da praia, somos um lugar aconchegante onde a família se reúne para café da manhã, almoço e café colonial.</p>
+                    
+                    <p>Cada pão sai do forno quentinho nas primeiras horas da manhã. Nosso almoço caseiro traz receitas tradicionais que passam de geração em geração, sempre com ingredientes frescos e frutos do mar selecionados.</p>
+
+                    <p>Aqui você encontra: <strong>pão quentinho, café fresquinho, almoço típico e café colonial</strong> em um ambiente acolhedor, perfeito para famílias, amigos e viajantes que buscam o verdadeiro sabor de Bombinhas.</p>
+
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-bread-slice"></i>
+                            <h3>Pão Quentinho</h3>
+                            <p>A partir das 6h</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-coffee"></i>
+                            <h3>Café Fresquinho</h3>
+                            <p>Todos os dias</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bowl-food"></i>
+                            <h3>Almoço Caseiro</h3>
+                            <p>Receitas tradicionais</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Café Colonial</h3>
+                            <p>Especialidade nossa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-store"></i>
+                        <p>Foto do Ambiente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio" class="menu">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <p class="section-subtitle">Café da Manhã, Almoço e Café Colonial</p>
+
+            <!-- Abas de Menu -->
+            <div class="menu-tabs">
+                <button class="tab-button active" data-tab="cafe-manha">Café da Manhã</button>
+                <button class="tab-button" data-tab="almoco">Almoço</button>
+                <button class="tab-button" data-tab="cafe-colonial">Café Colonial</button>
+                <button class="tab-button" data-tab="bebidas">Bebidas</button>
+            </div>
+
+            <!-- Café da Manhã -->
+            <div id="cafe-manha" class="tab-content active">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #d4a574 0%, #e8c59a 100%);">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <h3>Pão Quente</h3>
+                        <p>Pão quentinho saído do forno com manteiga caseira. Disponível a partir das 6h.</p>
+                        <span class="price">R$ 8,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #d4a574 0%, #e8c59a 100%);">
+                            <i class="fas fa-bacon"></i>
+                        </div>
+                        <h3>Café da Manhã Completo</h3>
+                        <p>Pão, queijo, presunto, ovos mexidos, café coado e suco natural.</p>
+                        <span class="price">R$ 28,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #d4a574 0%, #e8c59a 100%);">
+                            <i class="fas fa-bowl-food"></i>
+                        </div>
+                        <h3>Bolo Caseiro</h3>
+                        <p>Bolo feito em casa com receitas da vovó. Muda diariamente.</p>
+                        <span class="price">R$ 5,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #d4a574 0%, #e8c59a 100%);">
+                            <i class="fas fa-cookie"></i>
+                        </div>
+                        <h3>Broinhas e Biscoitos</h3>
+                        <p>Broinhas de chuva, biscoito polvilho e doce de coco.</p>
+                        <span class="price">A partir de R$ 3,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #d4a574 0%, #e8c59a 100%);">
+                            <i class="fas fa-jar"></i>
+                        </div>
+                        <h3>Geleia Caseira</h3>
+                        <p>Geleia de morango, goiaba e melancia feita artesanalmente.</p>
+                        <span class="price">R$ 4,00 pote</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #d4a574 0%, #e8c59a 100%);">
+                            <i class="fas fa-sandwich"></i>
+                        </div>
+                        <h3>Sanduíche na Chapa</h3>
+                        <p>Sanduíche na chapa com queijo derretido e presunto fumado.</p>
+                        <span class="price">R$ 15,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Almoço -->
+            <div id="almoco" class="tab-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <h3>Moqueca de Peixe</h3>
+                        <p>Peixe fresco em caldo aromático com leite de coco e especiarias. Acompanha arroz.</p>
+                        <span class="price">R$ 45,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);">
+                            <i class="fas fa-shrimp"></i>
+                        </div>
+                        <h3>Camarão Fresco</h3>
+                        <p>Camarão à milanesa ou grelhado, servido com arroz e salada fresca.</p>
+                        <span class="price">R$ 52,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);">
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <h3>Frango Caseiro</h3>
+                        <p>Frango acebolado ou assado com tempero especial da casa. Acompanha tutu de feijão.</p>
+                        <span class="price">R$ 32,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Caldeirada de Frutos do Mar</h3>
+                        <p>Mistura generosa de peixes, camarões e moluscos em caldo tradicional.</p>
+                        <span class="price">R$ 60,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Prato Vegetariano</h3>
+                        <p>Legumes refogados, arroz integral, feijão e salada fresca.</p>
+                        <span class="price">R$ 24,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);">
+                            <i class="fas fa-bowl-food"></i>
+                        </div>
+                        <h3>Prato Executivo</h3>
+                        <p>Escolha entre frango, peixe ou carne. Acompanha dois acompanhamentos.</p>
+                        <span class="price">R$ 38,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Café Colonial -->
+            <div id="cafe-colonial" class="tab-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #8b4513 0%, #c69c6d 100%);">
+                            <i class="fas fa-cookie"></i>
+                        </div>
+                        <h3>Café Colonial Completo</h3>
+                        <p>Pão quente, queijo, presunto, bolo caseiro, geleia, doce de abóbora, café coado.</p>
+                        <span class="price">R$ 55,00 (2 pessoas)</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #8b4513 0%, #c69c6d 100%);">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3>Bolo de Chocolate</h3>
+                        <p>Bolo caseiro de chocolate com cobertura de chocolate derretido.</p>
+                        <span class="price">R$ 8,00 fatia</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #8b4513 0%, #c69c6d 100%);">
+                            <i class="fas fa-candy"></i>
+                        </div>
+                        <h3>Doces Variados</h3>
+                        <p>Doce de abóbora, goiabada, doce de leite caseiro.</p>
+                        <span class="price">R$ 6,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #8b4513 0%, #c69c6d 100%);">
+                            <i class="fas fa-jar"></i>
+                        </div>
+                        <h3>Conservas e Geleias</h3>
+                        <p>Geleia caseira, compota de fruta, mel com própolis.</p>
+                        <span class="price">A partir de R$ 4,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #8b4513 0%, #c69c6d 100%);">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <h3>Pão de Queijo</h3>
+                        <p>Pão de queijo quentinho, nosso destaque do café colonial.</p>
+                        <span class="price">R$ 3,50</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #8b4513 0%, #c69c6d 100%);">
+                            <i class="fas fa-glass-water"></i>
+                        </div>
+                        <h3>Bebidas Incluídas</h3>
+                        <p>Café coado, suco natural, leite morno, chá de ervas.</p>
+                        <span class="price">Inclusos no colonial</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div id="bebidas" class="tab-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #6f4e37 0%, #9b8b7e 100%);">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>Café Coado</h3>
+                        <p>Café fresco coado na hora, nosso café da manhã perfeito.</p>
+                        <span class="price">R$ 3,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #6f4e37 0%, #9b8b7e 100%);">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>Café com Leite</h3>
+                        <p>Café coado quentinho com leite integral morno.</p>
+                        <span class="price">R$ 4,50</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #6f4e37 0%, #9b8b7e 100%);">
+                            <i class="fas fa-champagne-glass"></i>
+                        </div>
+                        <h3>Cappuccino</h3>
+                        <p>Cappuccino cremoso com espuma de leite.</p>
+                        <span class="price">R$ 6,50</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #6f4e37 0%, #9b8b7e 100%);">
+                            <i class="fas fa-glass-citrus"></i>
+                        </div>
+                        <h3>Suco Natural</h3>
+                        <p>Suco de laranja, melancia ou morango, feito na hora.</p>
+                        <span class="price">R$ 5,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #6f4e37 0%, #9b8b7e 100%);">
+                            <i class="fas fa-glass-water"></i>
+                        </div>
+                        <h3>Leite Morno</h3>
+                        <p>Leite integral morno, perfeito para crianças.</p>
+                        <span class="price">R$ 4,00</span>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-image" style="background: linear-gradient(135deg, #6f4e37 0%, #9b8b7e 100%);">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Chá e Café Descafeinado</h3>
+                        <p>Diversos tipos de chá de ervas e café descafeinado.</p>
+                        <span class="price">R$ 3,50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horários e Entregas -->
+    <section id="horario" class="schedule">
+        <div class="container">
+            <h2>Horários e Serviços</h2>
+            <p class="section-subtitle">Aberto todos os dias para você</p>
+
+            <div class="schedule-grid">
+                <div class="schedule-card">
+                    <div class="schedule-icon">
+                        <i class="fas fa-sunrise"></i>
+                    </div>
+                    <h3>Pão Quentinho</h3>
+                    <p><strong>A partir das 6h</strong></p>
+                    <p class="description">Pão saído do forno quentinho</p>
+                </div>
+
+                <div class="schedule-card">
+                    <div class="schedule-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Funcionamento</h3>
+                    <p><strong>6h às 21h</strong></p>
+                    <p class="description">Todos os dias, sem exceção</p>
+                </div>
+
+                <div class="schedule-card">
+                    <div class="schedule-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Almoço Caseiro</h3>
+                    <p><strong>12h às 15h</strong></p>
+                    <p class="description">Frutos do mar e receitas tradicionais</p>
+                </div>
+
+                <div class="schedule-card">
+                    <div class="schedule-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3>iFood</h3>
+                    <p><strong>Pedidos online</strong></p>
+                    <p class="description">Peça pelo aplicativo iFood</p>
+                </div>
+            </div>
+
+            <div class="delivery-info">
+                <h3>Opções de Pedido</h3>
+                <div class="delivery-options">
+                    <div class="option">
+                        <i class="fas fa-store"></i>
+                        <p><strong>No Local:</strong> Aberto 6h-21h</p>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-motorcycle"></i>
+                        <p><strong>iFood:</strong> Entrega rápida</p>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-phone"></i>
+                        <p><strong>Encomendas:</strong> Fone/WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Visite o Pão da Vovó</h2>
+            <p class="section-subtitle">Estamos te esperando pertinho da praia</p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Localização</h3>
+                    <p>Avenida Principal</p>
+                    <p>Bombinhas, Santa Catarina</p>
+                    <p>Pertinho da praia</p>
+                    <a href="https://maps.google.com/?q=Padaria+Pao+da+Vovo+Bombinhas" target="_blank" class="link-button">Ver no Mapa</a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefone e WhatsApp</h3>
+                    <p>(47) 99252-8600</p>
+                    <a href="tel:+5547992528600" class="link-button">Ligar</a>
+                    <a href="https://wa.me/5547992528600" class="link-button" target="_blank">WhatsApp</a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horários</h3>
+                    <p>Segunda a Domingo: 6h - 21h</p>
+                    <p>Pão quentinho a partir das 6h</p>
+                    <p>Almoço: 12h - 15h</p>
+                </div>
+            </div>
+
+            <div class="social-banner">
+                <h3>Siga a Gente!</h3>
+                <p>Veja novidades, fotos dos pratos e promoções</p>
+                <div class="social-buttons">
+                    <a href="https://instagram.com/paodavovobombas" target="_blank" class="social-btn instagram">
+                        <i class="fab fa-instagram"></i> @paodavovobombas
+                    </a>
+                    <a href="https://wa.me/5547992528600?text=Olá! Gostaria de encomendar" target="_blank" class="social-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> (47) 99252-8600
+                    </a>
+                    <a href="https://www.ifood.com.br" target="_blank" class="social-btn ifood">
+                        <i class="fas fa-utensils"></i> iFood
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Padaria Pão da Vovó. Tradição e Sabor desde 1989.</p>
+            <div class="footer-info">
+                <p>Avenida Principal, Bombinhas - SC</p>
+                <p>(47) 99252-8600 | @paodavovobombas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
